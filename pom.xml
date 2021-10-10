@@ -30,6 +30,7 @@
         <module>gateway</module>
         <module>order-service</module>
         <module>eureka-server</module>
+        <module>feign-api</module>
 
     </modules>
     <dependencyManagement>

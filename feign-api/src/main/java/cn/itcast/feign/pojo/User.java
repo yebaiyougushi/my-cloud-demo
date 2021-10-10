@@ -1,9 +1,5 @@
-package cn.itcast.order.pojo;
+package cn.itcast.feign.pojo;
 
-/**
- * @author zhengpeijian
- * @date 2021/10/9 21:28
- */
 import lombok.Data;
 
 @Data

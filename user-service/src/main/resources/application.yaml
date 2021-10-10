@@ -8,6 +8,13 @@ spring:
     username: root
     password: zpj168168
     driver-class-name: com.mysql.jdbc.Driver
+  cloud:
+    nacos:
+      server-addr: localhost:8181
+      discovery:
+        cluster-name: HZ
+  profiles:
+    active: dev
 #  shardingsphere:
 #    sharding:
 #      default-database-strategy:
@@ -21,11 +28,12 @@ mybatis:
 logging:
   level:
     com.example : debug
-  pattern:
-    dateformat : MM-dd HH:mm:ss:SSS
-eureka:
-  client:
-    service-url:  # eureka的地址信息
-      defaultZone: http://127.0.0.1:10086/eureka
+
+pattern:
+  dateformat: MM-dd HH:mm:ss:SSS
+#eureka:
+#  client:
+#    service-url:  # eureka的地址信息
+#      defaultZone: http://127.0.0.1:10086/eureka
 #pattern:
 #  name: 本地环境local
